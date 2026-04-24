@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- the pythonsdlactivity runs in a separate process for isolation -->
+    <application>
+        <activity
+            android:name="org.renpy.android.PythonSDLActivity"
+            android:process=":renpy"
+            android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|navigation|mcc|mnc|density"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:hardwareAccelerated="true"
+            android:exported="false" />
+    </application>
+
+</manifest>
