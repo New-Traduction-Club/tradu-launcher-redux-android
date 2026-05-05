@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TraduLauncher">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.traduclub.launcher.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.TraduLauncher">
             <intent-filter>
